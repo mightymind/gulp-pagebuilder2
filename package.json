@@ -1,14 +1,12 @@
 {
-  "author": {
-    "name": "azbn_ru"
-  },
+  "author": "azbn_ru",
   "bugs": {
     "url": "https://github.com/mightymind/gulp-pagebuilder2/issues"
   },
   "dependencies": {
     "gulp-util": "*",
     "through2": "*",
-	"azbn-tple": "*"
+    "azbn-tple": "*"
   },
   "description": "Gulp-plugin for build files with include other files",
   "devDependencies": {},
@@ -18,10 +16,7 @@
   "license": "ISC",
   "main": "index.js",
   "maintainers": [
-    {
-      "name": "azbn_ru",
-      "email": "devazbn@yandex.ru"
-    }
+    "azbn_ru <devazbn@yandex.ru>"
   ],
   "name": "gulp-pagebuilder2",
   "optionalDependencies": {},
