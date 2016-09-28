@@ -22,6 +22,9 @@ function pageBuilder2(root) {
 	})
 	
 	return stream = through.obj(function(file, enc, cb) {
+		
+		var __this = this;
+		
 		if (file.isStream()) {
 			//this.emit('error', new PluginError(PLUGIN_NAME, 'Streams are not supported!'));
 			return cb();
@@ -35,7 +38,7 @@ function pageBuilder2(root) {
 			tple.parseStr(code, {}, function(err, res_str){
 				file.contents = new Buffer(res_str, 'utf8');
 				
-				this.push(file);
+				__this.push(file);
 				
 				cb();
 			});
