@@ -1,0 +1,34 @@
+{
+  "author": {
+    "name": "azbn_ru"
+  },
+  "bugs": {
+    "url": "https://github.com/mightymind/gulp-pagebuilder2/issues"
+  },
+  "dependencies": {
+    "gulp-util": "*",
+    "through2": "*",
+	"azbn-tple": "*"
+  },
+  "description": "Gulp-plugin for build files with include other files",
+  "devDependencies": {},
+  "directories": {},
+  "homepage": "https://github.com/mightymind/gulp-pagebuilder2#readme",
+  "installable": true,
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "azbn_ru",
+      "email": "devazbn@yandex.ru"
+    }
+  ],
+  "name": "gulp-pagebuilder2",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mightymind/gulp-pagebuilder2.git"
+  },
+  "scripts": {},
+  "version": "0.1.0"
+}
