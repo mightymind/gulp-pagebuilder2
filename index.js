@@ -6,7 +6,7 @@ var	fs = require('fs'),
 
 const PLUGIN_NAME = 'gulp-pagebuilder2';
 
-function pageBuilder2(root) {
+function pageBuilder2(root, fish) {
 	
 	root = __dirname + '/../../' + (root || '');
 	root = path.normalize(root);
@@ -33,7 +33,14 @@ function pageBuilder2(root) {
 			//file.contents = Buffer.concat([prefixText, file.contents]);
 			
 			var code = file.contents.toString();
-			var o = new Object();
+			
+			var o;
+			
+			if(fish == null || typeof fish == 'undefined') {
+				o = new Object();
+			} else {
+				o = fish;
+			}
 			
 			var html = tple.parseStrSync(code, o);
 			
